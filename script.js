@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', loadTask);
 addEventListener("keypress", function(event , task_input) {
     if (event.key === "Enter") {
         add_task(this.value);
+        task_input = ""
     }
 });
 
@@ -26,7 +27,7 @@ function add_task() {
     // add_time_dom(task_input);
     // const time = new Date().getHours()
     // console.log(time);
-    document.getElementById("search").value == " "
+    // document.getElementById("search").value == " "
 
     save_local_storage(task_input);
 }
