@@ -24,6 +24,9 @@ function add_task() {
     let task_input = document.getElementById("search").value
 
     add_task_dom(task_input);
+    
+    // task_input = "";
+    document.getElementById("search").value = "";
     // add_time_dom(task_input);
     // const time = new Date().getHours()
     // console.log(time);
